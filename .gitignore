@@ -1,2 +1,3 @@
 data/*
 _py*
+.ipynb_checkpoints/*
