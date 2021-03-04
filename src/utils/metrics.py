@@ -15,7 +15,6 @@ def activ_to_bbox(acts, anchors, flatten=True):
         return torch.cat([centers, sizes], -1)
     else:
         return [activ_to_bbox(act, anc) for act, anc in zip(acts, anchors)]
-    return res
 
 
 def bbox_to_activ(bboxes, anchors, flatten=True):
@@ -26,7 +25,6 @@ def bbox_to_activ(bboxes, anchors, flatten=True):
         return torch.cat([t_centers, t_sizes], -1).div_(bboxes.new_tensor([[0.1, 0.1, 0.2, 0.2]]))
     else:
         return [activ_to_bbox(act, anc) for act, anc in zip(acts, anchors)]
-    return res
 
 
 def encode_class(idxs, n_classes):
