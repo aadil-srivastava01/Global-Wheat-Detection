@@ -1,5 +1,7 @@
 fastai==2.0.6
 fastcore==1.0.0
 fastprogress==1.0.0
+seaborn==0.11.1
+opencv-python==4.5.1.48
 notebook
 ipywidgets

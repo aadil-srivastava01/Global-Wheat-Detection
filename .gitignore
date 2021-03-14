@@ -2,3 +2,4 @@ data/*
 _py*
 src/.ipynb_checkpoints/*
 .vscode/*
+src/models/*
